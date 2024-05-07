@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+/**1st line NAVBAR**/
+
+.navbar {         /*as we use class="navbar" in index.html here in style.css write .navbar and inside parenthesis write whatever properties you want like height,width,bg etc as per requirement*/
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display:flex;   /*to get icon on next line*/
+    align-items:center;  /*navbar cross axis from top-bottom will get in center to our text deliver to india*/
+    justify-content: space-evenly;
+    
+}
+/** Box1 (it is box of amazon logo)**/
+.nav-logo {           /*by using .nav-logo we set its height and width*/
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 1.5px solid transparent;   /*transparent as original amazon website has its transparent boxes to element*/
+}
+
+.border:hover {
+    border: 2px solid white;     /*by hover we can see white box around around navbar elements without these hover we cant see whitebox*/
+}
+
+/** Box2 (it is box of "deliver to india")**/
+.add-first {
+    color: #cccccc;
+    font-size: 0.85rem;    /* using rem instead of using it in pixels to set other element fontsize comparing with the fontsize of root element and also to get website responsive*/
+    margin-left:15px;
+}
+
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;  /*in navbar we have add dispaly:flex*/
+    align-items: center;   
+}
+
+/** Box3(it is box of search bar,select,icon)**/
+.nav-search {             /*this is for whole box 3*/
+    display: flex;
+    justify-content: space-evenly;  /*space-evenly means there will be space in left and between the element*/
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;   /*border radius will give round to edges use pixels */
+}
+
+.search-select {       /*this is for "All"*/
+    background-color: #f3f3f3;    
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;     /*instead of using border-radius we used those b-t-l and b-b-l radius for giving round edge to "All" element from only oneside i.e left side as per original amazon website*/
+    border: none;      /*ALL was having border so we set it to none*/
+}
+
+.search-input {         /*this is for "Search Amazon"*/
+    width: 100%;   /*giving 100% as how much remaining space will be occupied by search input*/
+    font-size: 1rem;  /*use rem explain is above,by default "search Amazon" is big on OG amazon web so use fontsize */
+    border: none;   /*by default there is boder to search-input so set it none,it will get vanished */
+}
+
+.search-icon {            /*this is for icon*/
+    width: 45px;
+    display: flex;    /*for child icon element set display:flex*/
+    justify-content: center;     /*it will come in center but in main axis*/
+    align-items: center;       /*we use align-items:center to make it in center i.e from vertically cross axis */
+    font-size: 1.5rem;   /*used to make magnyfing icon size big as OG web*/
+    background-color: #febd68;    /*you cant get exact color for clone web but this is exact color*/
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
+    color:#0f1111;
+}
+
+.nav-search:hover {              /*border orange given to whole search input bar*/
+    border: 2px solid orange;
+}
+
+/** Box4 (it is box of Hello signin,accounts & lists) also this same style is used for Box5(it is of returns & orders) **/
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;     /*to make it bold i.e darker as OG web*/
+}
+
+/**Box6 (it is of Cart icon with cart text)**/
+.nav-cart i {      /*here we used i for combination of icons in it */
+    font-size: 30px;
+}
+
+.nav-cart {            /*it is for text Cart*/
+    font-size: 0.85rem;
+    font-weight: 700;    /*to make bolder text*/
+}
+
+/** 2nd line PANEL**/
+
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;   /*text color given white*/
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {       /* we use this for bringing all options in same line bcz they where not in same line and here p is given for paragraph tag in which all options are there */
+    display: inline;
+    margin-left: 15px;    /*to get separate from each other i.e they were conjusted*/
+}
+
+.panel-ops {           /*this is used for options styling*/
+    width: 70%;
+    font-size: 0.85rem;
+    /* font-weight: 600;  */
+}
+
+.panel-deals {          /*this is used for styling shop deals in electronics*/
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+/**3rd line hero section**/
+
+.hero-section {            /*this is used for adding image to bg i.e hero-section */
+    background-image: url("hero_image.jpg");
+    background-size: cover;    /*used to fit in page*/
+    height: 350px;   /*at last make height of hero-section only less that is 350 instead of 600 so that it will come appropriate */
+    display: flex;     /*we used display:flex for hero-msg*/
+    justify-content: center;
+    align-items: flex-end;   /*it will come in end of web*/
+}
+
+.hero-msg {      /*here msg will get print*/
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;     
+    align-items: center;    /*for vertivally we use this i.e from main ais it will come little bit in center*/
+    justify-content: center;    /*for text to come horizontally we use this property and it come in center little bit i.e main axis start from left to right but element items remain in center */
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;  /*as we used above align-items:flex-end it printed on end of web so for that we use margin-bottom to come little up*/
+}
+
+.hero-msg a {
+    color: #007185;
+}
+
+/**4th line which is shop section**/
+
+.shop-section {     /*this is our container*/
+    display: flex;   /*to bring them in same line*/
+    flex-wrap: wrap;  /*we used wrap as in html by copy pasting 8 boxes same info it was print in 1 same line so for that reason we used this */
+    justify-content: space-evenly;   /*we give container these property to give spaces in between and around */
+    background-color: #e2e7e6;
+}
+
+.box {      /*styling for all boxes*/
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px; /*we use this as to get little bit down from hero-section*/
+}
+
+.box-img {
+    height: 300px;    /*img will print*/
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {         /*we use it for image left and right side */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p {    
+    color: #007185;     /*we use box content for <p>tag and given color for "See more"*/
+}
+
+/**5th line which is footer and this is last line ,there will be 4 panels like "back to top"," some anchor tags,"then some amazon logo beside languages","some more anchor tags with copyright"**/
+
+footer {
+    margin-top: 15px;
+
+} 
+
+.foot-panel1 {              /*panel 1 of "Back to top"*/
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;      /*text will be on main axis and shift to center*/
+    align-items: center;          /*this will make text to center i.e little bit down to main axis*/
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {                 /*panel 2  i.e. Get To Known Us and all that headings and anchor tags "*/
+    background-color: #222f3d;
+    color: white;
+    height: 400px;
+    display: flex;   /*as this is parent container we make display:flex so that all list will come in a line */
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {       /*unorderlist of anchor tags for panel 2*/
+    display: block;      /*they will come in single line*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+ul p {
+    font-weight: 700;
+}
+
+.foot-panel3 {        /*panel 3 i.e of amazon logo*/
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;  /*white line border will come after 2 panel*/
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo { 
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+} 
+
+.foot-panel4 {          /*panel 4 i.e of pages and copyright*/
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+} 
+
+.pages {
+    padding-top: 25px;
+}
+
+.copyright {
+    padding: 5px;
+}
